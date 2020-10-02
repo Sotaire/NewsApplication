@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+
+
+                <TextView
+                    android:id="@+id/detail_author_tv"
+                    android:layout_width="wrap_content"
+                    android:text="Author"
+                    android:layout_marginRight="125dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/detail_title_tv"
+                    android:text="Title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            <TextView
+                android:id="@+id/detail_description_tv"
+                android:text="Description"
+                style="@style/text" />
+
+            <TextView
+                android:id="@+id/detail_published_at_tv"
+                android:text="Published_at"
+                style="@style/text" />
+
+            <TextView
+                android:id="@+id/detail_url_tv"
+                android:text="Url"
+                style="@style/text" />
+
+            <Button
+                android:id="@+id/detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
